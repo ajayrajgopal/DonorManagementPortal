@@ -1,0 +1,21 @@
+
+.logout {
+  color: #ffffff !important;
+  font-size: 15px;
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 60px;
+  text-transform: uppercase;
+  float: left;
+}
+.logout:hover{
+  color: #fff000 !important;
+  font-size: 15px;
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 60px;
+  text-transform: uppercase;
+  float: left;
+}
