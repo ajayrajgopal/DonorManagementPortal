@@ -76,12 +76,25 @@
                                         <div class="row col-lg-12">
 	                                        <div class="col-lg-6 col-md-6 form-group">
 	                                            <label class="col-lg-5 col-md-5 control-label">Section</label>
+												
 	                                            <div class="col-lg-7 col-md-7">
+													
 	                                                <select class="btn btn-default waves-effect form-control" name="recptype" id='recptype' onchange="updaterecp()" required="required">
 	                                           			<option value="">Receipt Type</option>
-	                                           			<option value="80G/D">80G Donation</option>
-	                                           			<option value="80G/C">80G Corpus</option>
+														@if(Session::get('srmabrep')=='Y')
+	                                           			<option value="D">SRMAB Donation</option>
+	                                           			<option value="C">SRMAB Corpus</option>
+														@endif
+														@if(Session::get('trdcrep')=='Y')
+	                                           			<option value="T/C">TRDC Donation</option>
+	                                           			<option value="T/C">TRDC Corpus</option>
+														@endif
+														@if(Session::get('otherrep')=='Y')
+														<option value="O/D">Other Donation</option>
+														<option value="O/C">Other Corpus</option>
+														@endif
 	                                           		</select>
+													
 	                                            </div>
 
 	                                        </div>
@@ -165,11 +178,13 @@
 		                                    </thead>
 		                                    <tbody>
 		                                    	@foreach($prevrecps as $recp)
-		                                        <tr >
-		                                            <td class="col-xs-4 col-lg-4 col-md-4">{{$recp->repno}}</td>
-		                                            <td class="col-xs-4 col-lg-4 col-md-4">{{ date('j F Y', strtotime($recp->date)) }}</td>
-		                                            <td class="col-xs-4 col-lg-4 col-md-4">{{$recp->amount}}</td>
-		                                        </tr>
+													@if(strcmp($recp->status,"Cancelled")!=0)
+														<tr >
+															<td class="col-xs-4 col-lg-4 col-md-4">{{$recp->repno}}</td>
+															<td class="col-xs-4 col-lg-4 col-md-4">{{ date('j F Y', strtotime($recp->date)) }}</td>
+															<td class="col-xs-4 col-lg-4 col-md-4">{{$recp->amount}}</td>
+														</tr>
+													@endif
 		                                        @endforeach
 		                                    </tbody>
 		                                </table>
