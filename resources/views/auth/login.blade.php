@@ -4,31 +4,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" href="/{{getenv('APP_NAME')}}/public/assets/images/favicon.ico">
+        <link rel="shortcut icon" href="/assets/images/favicon.ico">
 
         <title>SRMAB-Donor Management Portal</title>
 
         <!--Morris Chart CSS -->
-        <link rel="stylesheet" href="/{{getenv('APP_NAME')}}/plugins/morris/morris.css">
+        <link rel="stylesheet" href="../plugins/morris/morris.css">
 
         <!-- Plugins css-->
-        <link href="/{{getenv('APP_NAME')}}/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet" />
-        <link href="/{{getenv('APP_NAME')}}/plugins/multiselect/css/multi-select.css"  rel="stylesheet" type="text/css" />
-        <link href="/{{getenv('APP_NAME')}}/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
-        <link href="/{{getenv('APP_NAME')}}/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
-        <link href="/{{getenv('APP_NAME')}}/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+        <link href="../plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet" />
+        <link href="../plugins/multiselect/css/multi-select.css"  rel="stylesheet" type="text/css" />
+        <link href="../plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
+        <link href="../plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
 
         <!-- App css -->
-        <link href="/{{getenv('APP_NAME')}}//public/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="/{{getenv('APP_NAME')}}/public/assets/css/core.css" rel="stylesheet" type="text/css" />
-        <link href="/{{getenv('APP_NAME')}}/public/assets/css/components.css" rel="stylesheet" type="text/css" />
-        <link href="/{{getenv('APP_NAME')}}/public/assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="/{{getenv('APP_NAME')}}/public/assets/css/pages.css" rel="stylesheet" type="text/css" />
-        <link href="/{{getenv('APP_NAME')}}/public/assets/css/menu.css" rel="stylesheet" type="text/css" />
-        <link href="/{{getenv('APP_NAME')}}/public/assets/css/responsive.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="/{{getenv('APP_NAME')}}/plugins/switchery/switchery.min.css">
+        <link href="//assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
 
-        <link href="/{{getenv('APP_NAME')}}/public/assets/css/app.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/app.css" rel="stylesheet" type="text/css" />
        <!-- Navigation Bar-->
         <header id="topnav">
             <div class="topbar-main">
@@ -52,7 +52,7 @@
                                 </div>
                             </a>SRMAB
                         <a href="index.html" class="logo">
-                           <img src="/{{getenv('APP_NAME')}}/public/assets/images/logo.png" id="logoimg" alt="" height="50">
+                           <img src="/assets/images/logo.png" id="logoimg" alt="" height="50">
                            
                         </a>
                         </div>
@@ -161,35 +161,35 @@
             </div>
         </div>
         <!-- jQuery  -->
-        <script src="/{{getenv('APP_NAME')}}/public/assets/js/jquery.min.js"></script>
-        <script src="/{{getenv('APP_NAME')}}/public/assets/js/bootstrap.min.js"></script>
-        <script src="/{{getenv('APP_NAME')}}/public/assets/js/detect.js"></script>
-        <script src="/{{getenv('APP_NAME')}}/public/assets/js/fastclick.js"></script>
-        <script src="/{{getenv('APP_NAME')}}/public/assets/js/jquery.blockUI.js"></script>
-        <script src="/{{getenv('APP_NAME')}}/public/assets/js/waves.js"></script>
-        <script src="/{{getenv('APP_NAME')}}/public/assets/js/jquery.slimscroll.js"></script>
-        <script src="/{{getenv('APP_NAME')}}/public/assets/js/jquery.scrollTo.min.js"></script>
-        <script src="/{{getenv('APP_NAME')}}/plugins/switchery/switchery.min.js"></script>
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/detect.js"></script>
+        <script src="/assets/js/fastclick.js"></script>
+        <script src="/assets/js/jquery.blockUI.js"></script>
+        <script src="/assets/js/waves.js"></script>
+        <script src="/assets/js/jquery.slimscroll.js"></script>
+        <script src="/assets/js/jquery.scrollTo.min.js"></script>
+        <script src="../plugins/switchery/switchery.min.js"></script>
 
-        <script src="/{{getenv('APP_NAME')}}/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
-        <script type="text/javascript" src="/{{getenv('APP_NAME')}}/plugins/multiselect/js/jquery.multi-select.js"></script>
-        <script type="text/javascript" src="/{{getenv('APP_NAME')}}/plugins/jquery-quicksearch/jquery.quicksearch.js"></script>
-        <script src="/{{getenv('APP_NAME')}}/plugins/select2/js/select2.min.js" type="text/javascript"></script>
-        <script src="/{{getenv('APP_NAME')}}/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
-        <script src="/{{getenv('APP_NAME')}}/plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js" type="text/javascript"></script>
-        <script src="/{{getenv('APP_NAME')}}/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js" type="text/javascript"></script>
-        <script src="/{{getenv('APP_NAME')}}/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
+        <script src="../plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+        <script type="text/javascript" src="../plugins/multiselect/js/jquery.multi-select.js"></script>
+        <script type="text/javascript" src="../plugins/jquery-quicksearch/jquery.quicksearch.js"></script>
+        <script src="../plugins/select2/js/select2.min.js" type="text/javascript"></script>
+        <script src="../plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+        <script src="../plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js" type="text/javascript"></script>
+        <script src="../plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js" type="text/javascript"></script>
+        <script src="../plugins/bootstrap-maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
 
-        <script type="text/javascript" src="/{{getenv('APP_NAME')}}/plugins/autocomplete/jquery.mockjax.js"></script>
-        <script type="text/javascript" src="/{{getenv('APP_NAME')}}/plugins/autocomplete/jquery.autocomplete.min.js"></script>
-        <script type="text/javascript" src="/{{getenv('APP_NAME')}}/plugins/autocomplete/countries.js"></script>
-        <script type="text/javascript" src="/{{getenv('APP_NAME')}}/public/assets/pages/jquery.autocomplete.init.js"></script>
+        <script type="text/javascript" src="../plugins/autocomplete/jquery.mockjax.js"></script>
+        <script type="text/javascript" src="../plugins/autocomplete/jquery.autocomplete.min.js"></script>
+        <script type="text/javascript" src="../plugins/autocomplete/countries.js"></script>
+        <script type="text/javascript" src="/assets/pages/jquery.autocomplete.init.js"></script>
 
-        <script type="text/javascript" src="/{{getenv('APP_NAME')}}/public/assets/pages/jquery.form-advanced.init.js"></script>
+        <script type="text/javascript" src="/assets/pages/jquery.form-advanced.init.js"></script>
 
         <!-- App js -->
-        <script src="/{{getenv('APP_NAME')}}/public/assets/js/jquery.core.js"></script>
-        <script src="/{{getenv('APP_NAME')}}/public/assets/js/jquery.app.js"></script>
+        <script src="/assets/js/jquery.core.js"></script>
+        <script src="/assets/js/jquery.app.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" type="text/javascript"></script>

@@ -19,7 +19,7 @@
 		</div>
     </div>
     <script type="text/javascript">
-    	var url="{{ '/'.getenv('APP_NAME').'/public/donors/' }}";
+    	var url="{{ '/donors/' }}";
     	function submitfrm(){
     		var term=document.getElementById('search').value;
     		term=term.replace(/\//g, ':');

@@ -17,7 +17,7 @@
      @if(strcmp($receipts->status,"Cancelled")!=0)
         <div class="row col-lg-12" >
         @else
-        <div class="row col-lg-12" style="background-image:url( '/donorportal/public/assets/cancelled.gif' )">
+        <div class="row col-lg-12" style="background-image:url( '/assets/cancelled.gif' )">
         @endif
             <div class="row col-lg-12" >
                 <h4 class="page-title">Receipt Details</h4>
@@ -50,7 +50,7 @@
                      <div class="row col-lg-12 col-md-12 col-xs-12">
                      <p>By {{$receipts->paymode}} <strong>Rs.{{$receipts->amount}}</strong></p>
                      @if(strcmp($receipts->status,"Cancelled")!=0)
-                     <form class="form-horizontal" role="form" method="POST" action="/{{getenv('APP_NAME')}}/public/receipts/{{ $receipts->id }}" onsubmit="return confirm('Are you sure you want to cancel receipt?');">
+                     <form class="form-horizontal" role="form" method="POST" action="/receipts/{{ $receipts->id }}" onsubmit="return confirm('Are you sure you want to cancel receipt?');">
 
                                 {{ method_field('PUT') }}
                                 {{ csrf_field() }}
@@ -85,7 +85,7 @@
       </div>
          <script type="text/javascript">
             function printrecp() {
-                window.open("/{{getenv('APP_NAME')}}/public/receipts/{{$receipts->id}}",'_blank','height=2000,width=700,top=0,left=100');
+                window.open("/receipts/{{$receipts->id}}",'_blank','height=2000,width=700,top=0,left=100');
             } 
          </script>   
 @endsection('content')

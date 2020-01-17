@@ -50,7 +50,7 @@
                </div>
          <script type="text/javascript">
             function printrecp() {
-                window.open("/{{getenv('APP_NAME')}}/public/receipts/{{$repid}}",'_blank','height=2000,width=700,top=0,left=100');
+                window.open("/receipts/{{$repid}}",'_blank','height=2000,width=700,top=0,left=100');
             } 
          </script>      
         

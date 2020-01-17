@@ -50,7 +50,7 @@
 				                @endif
 			                                           
                                             
-                                <form class="form-horizontal" role="form" method="POST" action="/{{getenv('APP_NAME')}}/public/receipts">
+                                <form class="form-horizontal" role="form" method="POST" action="/receipts">
 
                                 	<div class="row col-lg-12">
 	                                    <div class="col-lg-6 col-md-6 form-group">
@@ -80,7 +80,7 @@
 	                                            <div class="col-lg-7 col-md-7">
 													
 	                                                <select class="btn btn-default waves-effect form-control" name="recptype" id='recptype' onchange="updaterecp()" required="required">
-	                                           			<option value="">Receipt Type</option>
+	                                           			<option value="">Receipt Type{{Session::get('srmabrep')}}</option>
 														@if(Session::get('srmabrep')=='Y')
 	                                           			<option value="D">SRMAB Donation</option>
 	                                           			<option value="C">SRMAB Corpus</option>

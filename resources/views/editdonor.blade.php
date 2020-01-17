@@ -30,7 +30,7 @@
 
 	                	
     					@foreach($donors as $donor)
-	                	<form class="form-horizontal" role="form" method="POST" action="/{{getenv('APP_NAME')}}/public/donors/{{ $donor->id }}">
+	                	<form class="form-horizontal" role="form" method="POST" action="/donors/{{ $donor->id }}">
 	                	@endforeach
 	                		    {{ method_field('PUT') }}
 

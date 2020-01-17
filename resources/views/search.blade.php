@@ -18,7 +18,7 @@
                         <div class="container" style="width: 100%;">
                             <div class="btn-group pull-right" >
 
-	                            <a href="/{{getenv('APP_NAME')}}/public/donors/create">
+	                            <a href="/donors/create">
                                 	<button class="btn btn-orange waves-effect w-md waves-light m-b-5">New Donor</button>
                                 </a>
                             </div>
@@ -61,14 +61,14 @@
 	                                            <td style="vertical-align: middle;">{{ $donor->mobile }}</td>
 	                                            <td style="vertical-align: middle;">{{ $donor->city }}</td>
 	                                            <td style="vertical-align: middle;">
-		                                            <form class="form-horizontal" style='display: table-cell; vertical-align:middle;' role="form" method="GET" action="/{{getenv('APP_NAME')}}/public/receipts/create">
+		                                            <form class="form-horizontal" style='display: table-cell; vertical-align:middle;' role="form" method="GET" action="/receipts/create">
 		                                            	{{ csrf_field() }}
 		                                          		<input type="hidden" name="donordetails" value="{{ $donor }}">
 		                                           		<button type="submit" class="btn btn-default waves-effect">Create Receipt</button>
 		                                           	</form>
 	                                           	</td>
 	                                           	<td style="vertical-align: middle;">
-	                                           		<a href="/{{getenv('APP_NAME')}}/public/donors/{{ $donor->id }}/edit"><button type="button" class="btn btn-default waves-effect">EDIT</button>
+	                                           		<a href="/donors/{{ $donor->id }}/edit"><button type="button" class="btn btn-default waves-effect">EDIT</button>
 	                                            </td>
 	                                        </tr>
 	                                    @endforeach

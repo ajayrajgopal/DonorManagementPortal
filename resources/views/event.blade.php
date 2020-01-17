@@ -35,7 +35,7 @@
 		                	</div>
 		                </div>
 		                @endif
-	                	<form class="form-horizontal" role="form" method="POST" action="\{{getenv('APP_NAME')}}\public\events">
+	                	<form class="form-horizontal" role="form" method="POST" action="\events">
 	                			{{ csrf_field() }}
 	                				<input type="hidden" name="donorid" value="{{ $id }}">
                                         

@@ -34,7 +34,7 @@
 
                                             </div>
                                             <hr/>
-                                            <a href="/{{getenv('APP_NAME')}}/public/donors/{{ $donordetails->id }}/edit">
+                                            <a href="/donors/{{ $donordetails->id }}/edit">
                                             <button type="button" class="btn btn-danger btn-sm w-sm waves-effect m-t-10 waves-light">Edit</button>
                                             </a>
                                         </div>

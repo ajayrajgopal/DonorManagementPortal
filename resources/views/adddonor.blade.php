@@ -28,7 +28,7 @@
 	                @endif
 
 	                	
-	                	<form class="form-horizontal" role="form" id="adddonor" method="POST" action="/{{getenv('APP_NAME')}}/public/donors">
+	                	<form class="form-horizontal" role="form" id="adddonor" method="POST" action="/donors">
 	                		@include('donorform')
 	                		
 		                	<div class="row">
