@@ -80,7 +80,7 @@
 	                                            <div class="col-lg-7 col-md-7">
 													
 	                                                <select class="btn btn-default waves-effect form-control" name="recptype" id='recptype' onchange="updaterecp()" required="required">
-	                                           			<option value="">Receipt Type{{Session::get('srmabrep')}}</option>
+	                                           			<option value="">Receipt Type</option>
 														@if(Session::get('srmabrep')=='Y')
 	                                           			<option value="D">SRMAB Donation</option>
 	                                           			<option value="C">SRMAB Corpus</option>
